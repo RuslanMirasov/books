@@ -1,2 +1,2 @@
 # template
-https://ruslanmirasov.github.io/template/
+https://ruslanmirasov.github.io/books
