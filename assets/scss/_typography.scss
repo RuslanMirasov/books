@@ -1,47 +1,55 @@
 /*----------------------------------------------- TYPOGRAPHY */
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: normal;
+}
 .title-wrapp {
    display: inline-block;
    width: 100%;
 }
 
-.title-wrapp > * {
-   margin-top: 20px;
-}
-
-.title-wrapp > *:first-child {
-   margin-top: 0px;
-}
-
 .title {
+   display: inline-block;
+   width: 100%;
+   font-weight: normal;
    &.title--h1 {
-      font-weight: 500;
+      @include css-r('font-size', 168, 60, 1);
+      line-height: 1;
+      @media screen and (max-width: 1840px) {
+         @include css-r('font-size', 160, 60, 1);
+      }
+      @media screen and (max-width: 1560px) {
+         @include css-r('font-size', 150, 60, 1);
+      }
+      @media screen and (max-width: 1320px) {
+         @include css-r('font-size', 120, 60, 1);
+      }
       @media screen and (max-width: 767px) {
-         font-size: 30px;
+         line-height: 1.1;
       }
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
-         font-size: 42px;
-      }
-      @media screen and (min-width: 1280px) {
-         font-size: 64px;
+   }
+   &.title--border {
+      border-top: 2px solid var(--black);
+      @include css-r('padding-top', 20, 10, 1);
+      @media screen and (max-width: 767px) {
+         border-top: 1px solid var(--black);
       }
    }
    &.title--h2 {
-      font-weight: 600;
-      @media screen and (max-width: 767px) {
-         font-size: 20px;
-      }
-      @media screen and (min-width: 768px) {
-         font-size: 32px;
-      }
+      @include css-r('font-size', 80, 40, 1);
+      line-height: 1;
+   }
+   &.title-h3 {
+      @include css-r('font-size', 35, 20, 1);
+      line-height: 1.2;
    }
 }
 
 .subtitle {
-   @media screen and (max-width: 767px) {
-      font-size: 36px;
-   }
-   @media screen and (min-width: 768px) {
-      font-size: 20px;
-   }
+   @include css-r('font-size', 35, 20, 1);
+   line-height: 1.2;
 }

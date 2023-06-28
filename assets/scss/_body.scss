@@ -1,3 +1,11 @@
+@font-face {
+   font-family: 'superstar_grotesk';
+   src: url('../fonts/superstar_grotesk.woff2') format('woff2'), url('../fonts/superstar_grotesk.woff') format('woff'),
+      url('../fonts/superstar_grotesk.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
 .body {
    display: inline-flex;
    flex-wrap: wrap;
@@ -5,8 +13,8 @@
    width: 100%;
    height: auto;
    min-height: 100vh;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 16px;
+   font-family: 'superstar_grotesk';
+   font-size: 35px;
    line-height: 1.2;
    font-weight: 400;
    background-color: #fff;
@@ -20,21 +28,17 @@
 .container {
    position: relative;
    margin: 0 auto;
-   padding: 0px 20px;
-   @media screen and (max-width: 767px) {
-      max-width: 480px;
-   }
-   @media screen and (min-width: 768px) and (max-width: 1279px) {
-      max-width: 768px;
-   }
-   @media screen and (min-width: 1280px) {
-      max-width: 1280px;
-   }
+   max-width: 1800px;
 }
 
 .section {
    position: relative;
    overflow-x: hidden;
    overflow-y: auto;
-   padding: 100px 0px;
+   @include css-r('padding-left', 60, 20, 1);
+   @include css-r('padding-right', 60, 20, 1);
+   @media screen and (max-width: 599px) {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
 }

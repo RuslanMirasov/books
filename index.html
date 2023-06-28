@@ -14,16 +14,15 @@
    <body class="body">
       <!-- preloader -->
       <div class="preloader">
-         <div class="preloader__procent">
-            <div class="preloader__svg"></div>
-            <p data-preloader>0%</p>
+         <div class="preloaderLogo">
+            <svg><use href="./assets/img/icons.svg#logo2"></use></svg>
          </div>
       </div>
 
       <!--header-->
       <header class="header">
          <div class="container">
-            <a href="#" class="logo" data-scrollto="section--hero">
+            <a href="./" class="logo">
                <svg width="56" height="56"><use href="./assets/img/icons.svg#logo"></use></svg>
             </a>
             <div class="menu-backdrop">
@@ -50,22 +49,142 @@
          <section class="section section--hero">
             <div class="container">
                <div class="title-wrapp">
-                  <h1 class="title title--h1">Title H1</h1>
-                  <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                  <button class="button" data-popup="request">button</button>
+                  <h1 class="title title--h1">Des Esseintes Press</h1>
+                  <svg width="132" height="32"><use href="./assets/img/icons.svg#logo2"></use></svg>
+               </div>
+
+               <!--SLIDER-->
+               <div
+                  class="responsiveSlider"
+                  data-col="1"
+                  data-coltab="1"
+                  data-colmob="1"
+                  data-margin="0"
+                  data-marginmobil="0"
+                  data-effect="slide"
+                  data-autoplay="0"
+                  data-move="true"
+                  data-loop="true"
+               >
+                  <div class="swiper-container heroSlider">
+                     <div class="swiper-wrapper">
+                        <!--slide 1-->
+                        <div class="swiper-slide">
+                           <img src="./assets/img/heroSlider/1.jpg" alt="Des Esseintes Press" width="1795" height="872" />
+                        </div>
+                        <!--slide 2-->
+                        <div class="swiper-slide">
+                           <img src="./assets/img/heroSlider/1.jpg" alt="Des Esseintes Press" width="1795" height="872" />
+                        </div>
+                        <!--slide 3-->
+                        <div class="swiper-slide">
+                           <img src="./assets/img/heroSlider/1.jpg" alt="Des Esseintes Press" width="1795" height="872" />
+                        </div>
+                     </div>
+                  </div>
+                  <!--arrows-->
+                  <div class="slider-arrow slider-arrow--left heroSlider_prev">
+                     <svg><use href="./assets/img/icons.svg#arr_l"></use></svg>
+                  </div>
+                  <div class="slider-arrow slider-arrow--right heroSlider_next">
+                     <svg><use href="./assets/img/icons.svg#arr_r"></use></svg>
+                  </div>
+               </div>
+
+               <div class="heroText">
+                  <p class="subtitle">
+                     Равным образом консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.
+                  </p>
+                  <a href="./about.html" class="button">Узнать больше</a>
                </div>
             </div>
          </section>
          <!--section Hero end-->
+
+         <!--section Hero-->
+         <section class="section section--hero">
+            <div class="container">
+               <h2 class="title title--h2 title--border">Новинки</h2>
+               <div class="products products--3">
+                  <div class="products__item">
+                     <article class="product">
+                        <a href="#!" class="product__image">
+                           <img src="./assets/img/products/1.jpg" alt="book" />
+                        </a>
+                        <div class="product__price">
+                           <p class="author">Кристоф Шлингензиф</p>
+                           <span class="price">99 999 ₽</span>
+                           <button class="button small" data-popup="request">В корзину</button>
+                        </div>
+                        <a href="#!">
+                           <h3 class="title title-h3">Так хорошо, как здесь, на небе быть не может!</h3>
+                        </a>
+                     </article>
+                  </div>
+                  <div class="products__item">
+                     <article class="product">
+                        <a href="#!" class="product__image">
+                           <img src="./assets/img/products/2.jpg" alt="book" />
+                        </a>
+                        <div class="product__price">
+                           <p class="author">Пол Шредер</p>
+                           <span class="price">99 999 ₽</span>
+                           <button class="button small" data-popup="request">В корзину</button>
+                        </div>
+                        <a href="#!">
+                           <h3 class="title title-h3">Трансцендентальный стиль в кино: Одзу, Брессон, Дрейер</h3>
+                        </a>
+                     </article>
+                  </div>
+                  <div class="products__item">
+                     <article class="product">
+                        <a href="#!" class="product__image">
+                           <img
+                              src="https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-realistic-white-book-mock-up-template-background-png-image_4669134.png"
+                              alt="book"
+                           />
+                        </a>
+                        <div class="product__price">
+                           <p class="author">Фридрих Киттлер</p>
+                           <span class="price">99 999 ₽</span>
+                           <button class="button small" data-popup="request">В корзину</button>
+                        </div>
+                        <a href="#!">
+                           <h3 class="title title-h3">Философии литературы: Берлинские лекции 2002</h3>
+                        </a>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </section>
       </main>
       <!--main end-->
 
       <!--footer-->
       <footer class="footer">
          <div class="container">
-            <a href="#" class="logo" data-scrollto="section--hero">
-               <svg width="132" height="32"><use href="./assets/img/icons.svg#logo"></use></svg>
-            </a>
+            <div class="heroText">
+               <h2 class="title">Des Esseintes Press</h2>
+               <a href="./">
+                  <svg><use href="./assets/img/icons.svg#logo2"></use></svg>
+               </a>
+            </div>
+            <div class="footer__content">
+               <address>
+                  Московский международный университет, Россия, Москва, <br />
+                  Ленинградский проспект, 17, 125040
+               </address>
+               <nav>
+                  <ul>
+                     <li><a href="#!">Книги</a></li>
+                     <li><a href="#!">События</a></li>
+                     <li><a href="#!">Авторы</a></li>
+                     <li><a href="#!">Об издательстве</a></li>
+                     <li><a href="#!">Контакты</a></li>
+                     <li><a href="#!">Политика конфиденциальности</a></li>
+                  </ul>
+               </nav>
+            </div>
          </div>
       </footer>
       <!--footer end-->

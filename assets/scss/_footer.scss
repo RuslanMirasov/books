@@ -1,14 +1,60 @@
 /*----------------------------------------------- FOOTER*/
 
 .footer {
+   @include css-r('padding-left', 60, 20, 1);
+   @include css-r('padding-right', 60, 20, 1);
    width: 100%;
-   background: #313131;
-   color: #fff;
-   padding: 80px 0px;
+   .container {
+      padding: 20px 0px 40px 0px;
+      border-top: 2px solid var(--black);
+      @media screen and (max-width: 767px) {
+         border-top: 1px solid var(--black);
+      }
+   }
 }
 
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1280px) {
+.footer__content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: flex-start;
+   width: 100%;
+   @include css-r('margin-top', 90, 10, 1);
+   font-size: 14px;
+   line-height: 1.3;
+   gap: 20px;
+   address {
+      display: inline-block;
+      width: 100%;
+      max-width: 310px;
+      font-style: normal;
+   }
+   nav {
+      display: inline-block;
+      width: 100%;
+      max-width: 440px;
+      ul {
+         display: flex;
+         flex-wrap: wrap;
+         width: 100%;
+         justify-content: flex-start;
+         align-items: flex-start;
+         li {
+            width: 40%;
+            padding: 2px 0px;
+            &:nth-child(2n) {
+               width: 60%;
+            }
+            a {
+               cursor: pointer;
+               transition: 250ms var(--cubic);
+               opacity: 1;
+               &:hover,
+               &:focus {
+                  opacity: 0.5;
+               }
+            }
+         }
+      }
+   }
 }

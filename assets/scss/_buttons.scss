@@ -18,23 +18,30 @@
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   font-size: 20px;
-   font-weight: 400;
+   @include css-r('font-size', 40, 20, 1);
+   line-height: 1.1;
    padding: 10px 30px;
-   border-radius: 8px;
-   border: 1px solid var(--button-color);
+   border-radius: 50px;
+   border: 2px solid var(--black);
    background: var(--button-color);
-   color: #fff;
+   color: var(--black);
    transition: 250ms var(--cubic);
+   letter-spacing: -0.5px;
    cursor: pointer;
    &:hover,
    &:focus {
-      border: 1px solid var(--button-color-hover);
       background: var(--button-color-hover);
+      color: var(--white);
    }
-   &.big {
-      padding: 11px 22px;
-      font-weight: 500;
+   &.small {
+      border: 1px solid #707070;
+      font-size: 14px;
+      padding: 8px 20px;
+      letter-spacing: 0.4px;
+      &:hover,
+      &:focus {
+         border: 1px solid #000000;
+      }
    }
    &:disabled {
       opacity: 0.5;
