@@ -6,7 +6,7 @@ const openButton = document.querySelectorAll('[data-popup]'),
    body = document.querySelector('.body'),
    bodyPadding = window.innerWidth - document.querySelector('.main').offsetWidth;
 
-let defaultPopupInfo = ['request', 'Send order form', 'Order Form', 'Fill in the form and we will get <br />back to you as soon as possible!', 'Send'];
+let defaultPopupInfo = ['request', 'Купить книгу', 'Купить книгу', 'Заполните форму и наш менеджер <br />свяжется с Вами в ближайшее время', 'Отправить'];
 
 //MODAL OPEN BUTTON CLICK
 openButton.forEach(btn => {

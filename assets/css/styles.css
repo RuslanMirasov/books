@@ -1181,7 +1181,6 @@ h6 {
   height: auto;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  border-radius: 20px;
   background: #fff;
   padding: 40px 30px;
   opacity: 1;
@@ -1212,7 +1211,6 @@ h6 {
   width: 30px;
   height: 30px;
   border-radius: 30px;
-  border: 1px solid #000;
   color: var(--black);
   cursor: pointer;
   outline: none;
