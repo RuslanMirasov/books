@@ -43,13 +43,22 @@ h6 {
       @include css-r('font-size', 80, 40, 1);
       line-height: 1;
    }
-   &.title-h3 {
+   &.title--h3 {
       @include css-r('font-size', 30, 18, 1);
+      line-height: 1.2;
+   }
+   &.title--h4 {
+      @include css-r('font-size', 30, 20, 1);
       line-height: 1.2;
    }
 }
 
 .subtitle {
    @include css-r('font-size', 35, 20, 1);
+   line-height: 1.2;
+}
+
+.text {
+   @include css-r('font-size', 35, 18, 1);
    line-height: 1.2;
 }
