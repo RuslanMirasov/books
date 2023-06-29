@@ -44,7 +44,7 @@ h6 {
       line-height: 1;
    }
    &.title-h3 {
-      @include css-r('font-size', 35, 20, 1);
+      @include css-r('font-size', 30, 18, 1);
       line-height: 1.2;
    }
 }

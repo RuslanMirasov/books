@@ -73,11 +73,16 @@
    .subtitle {
       display: inline-block;
       width: auto;
-      max-width: 1020px;
+      max-width: 860px;
    }
    svg {
       width: 50px;
       height: 60px;
+   }
+   @media screen and (max-width: 767px) {
+      .button {
+         margin-left: auto;
+      }
    }
 }
 
@@ -92,7 +97,7 @@
    width: 100%;
    flex-wrap: wrap;
    justify-content: flex-start;
-   margin-top: 10px;
+   @include css-r('margin-top', 30, 10, 1);
    gap: 1%;
    @media screen and (max-width: 599px) {
       gap: 0%;
@@ -100,6 +105,9 @@
    .products__item {
       width: 100%;
       margin: 30px 0px;
+      @media screen and (max-width: 880px) {
+         margin: 20px 0px;
+      }
    }
    &.products--3 {
       .products__item {
@@ -134,8 +142,11 @@
 }
 
 .product {
-   display: block;
+   display: flex;
+   flex-wrap: wrap;
    width: 100%;
+   gap: 1%;
+   align-items: center;
    .product__image {
       display: flex;
       flex-wrap: wrap;
@@ -145,6 +156,7 @@
       width: 100%;
       background: var(--grey);
       overflow: hidden;
+      order: 1;
       &:before {
          content: '';
          display: block;
@@ -169,23 +181,49 @@
          opacity: 0.5;
       }
    }
-   .title {
-      opacity: 1;
-      transition: 250ms var(--cubic);
+
+   .product__title {
+      order: 4;
+      @media screen and (max-width: 880px) {
+         order: 3;
+         br {
+            display: none;
+         }
+      }
+      .title {
+         opacity: 1;
+         margin-top: 14px;
+      }
    }
 }
 
 .product__price {
    display: flex;
    flex-wrap: nowrap;
-   justify-content: space-between;
+   justify-content: flex-end;
    align-items: center;
-   width: 100%;
-   padding: 10px 0px;
+   width: 49%;
+   padding: 14px 0px;
    font-size: 14px;
    line-height: 1.2;
+   order: 3;
+   @media screen and (max-width: 880px) {
+      order: 4;
+      width: 100%;
+      justify-content: space-between;
+   }
    .price {
-      margin-left: auto;
       margin-right: 20px;
+   }
+}
+.author {
+   display: inline-block;
+   font-size: 14px;
+   line-height: 1.2;
+   width: 50%;
+   order: 2;
+   @media screen and (max-width: 880px) {
+      width: 100%;
+      margin-top: 14px;
    }
 }

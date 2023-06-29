@@ -153,12 +153,12 @@ h6 {
   }
 }
 .title.title-h3 {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1.2;
 }
 @media only screen and (min-width: 0px) and (max-width: 1920px) {
   .title.title-h3 {
-    font-size: calc(20px + 15 * ((100vw - 375px) / 1545));
+    font-size: calc(18px + 12 * ((100vw - 375px) / 1545));
   }
 }
 
@@ -231,21 +231,24 @@ h6 {
   z-index: 20;
   width: 100%;
   box-sizing: border-box;
+}
+.header .header__wrapper {
+  width: 100%;
   padding-left: 60px;
   padding-right: 60px;
 }
 @media only screen and (min-width: 0px) and (max-width: 1920px) {
-  .header {
+  .header .header__wrapper {
     padding-left: calc(20px + 40 * ((100vw - 375px) / 1545));
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 1920px) {
-  .header {
+  .header .header__wrapper {
     padding-right: calc(20px + 40 * ((100vw - 375px) / 1545));
   }
 }
 @media screen and (max-width: 599px) {
-  .header {
+  .header .header__wrapper {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -590,11 +593,16 @@ h6 {
 .heroText .subtitle {
   display: inline-block;
   width: auto;
-  max-width: 1020px;
+  max-width: 860px;
 }
 .heroText svg {
   width: 50px;
   height: 60px;
+}
+@media screen and (max-width: 767px) {
+  .heroText .button {
+    margin-left: auto;
+  }
 }
 
 .section--new {
@@ -612,8 +620,13 @@ h6 {
   width: 100%;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-top: 10px;
+  margin-top: 30px;
   gap: 1%;
+}
+@media only screen and (min-width: 0px) and (max-width: 1920px) {
+  .products {
+    margin-top: calc(10px + 20 * ((100vw - 375px) / 1545));
+  }
 }
 @media screen and (max-width: 599px) {
   .products {
@@ -623,6 +636,11 @@ h6 {
 .products .products__item {
   width: 100%;
   margin: 30px 0px;
+}
+@media screen and (max-width: 880px) {
+  .products .products__item {
+    margin: 20px 0px;
+  }
 }
 .products.products--3 .products__item {
   width: 32.666666%;
@@ -654,8 +672,11 @@ h6 {
 }
 
 .product {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
+  gap: 1%;
+  align-items: center;
 }
 .product .product__image {
   display: flex;
@@ -666,6 +687,7 @@ h6 {
   width: 100%;
   background: var(--grey);
   overflow: hidden;
+  order: 1;
 }
 .product .product__image:before {
   content: "";
@@ -686,24 +708,56 @@ h6 {
 .product a:hover .title {
   opacity: 0.5;
 }
-.product .title {
+.product .product__title {
+  order: 4;
+}
+@media screen and (max-width: 880px) {
+  .product .product__title {
+    order: 3;
+  }
+  .product .product__title br {
+    display: none;
+  }
+}
+.product .product__title .title {
   opacity: 1;
-  transition: 250ms var(--cubic);
+  margin-top: 14px;
 }
 
 .product__price {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  padding: 10px 0px;
+  width: 49%;
+  padding: 14px 0px;
   font-size: 14px;
   line-height: 1.2;
+  order: 3;
+}
+@media screen and (max-width: 880px) {
+  .product__price {
+    order: 4;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 .product__price .price {
-  margin-left: auto;
   margin-right: 20px;
+}
+
+.author {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.2;
+  width: 50%;
+  order: 2;
+}
+@media screen and (max-width: 880px) {
+  .author {
+    width: 100%;
+    margin-top: 14px;
+  }
 }
 
 /*----------------------------------------------- BUTTONS*/
@@ -823,6 +877,11 @@ h6 {
 .footer__content nav ul li {
   width: 40%;
   padding: 2px 0px;
+}
+@media screen and (max-width: 767px) {
+  .footer__content nav ul li {
+    padding: 5px 0px;
+  }
 }
 .footer__content nav ul li:nth-child(2n) {
   width: 60%;

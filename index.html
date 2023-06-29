@@ -21,24 +21,26 @@
 
       <!--header-->
       <header class="header">
-         <div class="container">
-            <a href="./" class="logo">
-               <svg width="56" height="56"><use href="./assets/img/icons.svg#logo"></use></svg>
-            </a>
-            <div class="menu-backdrop">
-               <button type="button" class="close-area" data-menu-open></button>
-               <div class="menu-body">
-                  <nav class="menu">
-                     <ul>
-                        <li class="menu__item"><a href="#!">Книги</a></li>
-                        <li class="menu__item"><a href="#!">События</a></li>
-                        <li class="menu__item"><a href="#!">Авторы</a></li>
-                        <li class="menu__item"><a href="#!">Об издательстве</a></li>
-                     </ul>
-                  </nav>
+         <div class="header__wrapper">
+            <div class="container">
+               <a href="./" class="logo">
+                  <svg width="56" height="56"><use href="./assets/img/icons.svg#logo"></use></svg>
+               </a>
+               <div class="menu-backdrop">
+                  <button type="button" class="close-area" data-menu-open></button>
+                  <div class="menu-body">
+                     <nav class="menu">
+                        <ul>
+                           <li class="menu__item"><a href="#!">Книги</a></li>
+                           <li class="menu__item"><a href="#!">События</a></li>
+                           <li class="menu__item"><a href="#!">Авторы</a></li>
+                           <li class="menu__item"><a href="#!">Об издательстве</a></li>
+                        </ul>
+                     </nav>
+                  </div>
                </div>
+               <button type="button" class="burger" data-menu-open><span></span></button>
             </div>
-            <button type="button" class="burger" data-menu-open><span></span></button>
          </div>
       </header>
       <!--header end-->
@@ -111,13 +113,16 @@
                         <a href="#!" class="product__image">
                            <img src="./assets/img/products/1.jpg" alt="book" />
                         </a>
+                        <p class="author">Кристоф Шлингензиф</p>
                         <div class="product__price">
-                           <p class="author">Кристоф Шлингензиф</p>
                            <span class="price">99 999 ₽</span>
                            <button class="button small" data-popup="request">В корзину</button>
                         </div>
-                        <a href="#!">
-                           <h3 class="title title-h3">Так хорошо, как здесь, на небе быть не может!</h3>
+                        <a href="#!" class="product__title">
+                           <h3 class="title title-h3">
+                              Так хорошо, как здесь, <br />
+                              на небе быть не может!
+                           </h3>
                         </a>
                      </article>
                   </div>
@@ -126,13 +131,16 @@
                         <a href="#!" class="product__image">
                            <img src="./assets/img/products/2.jpg" alt="book" />
                         </a>
+                        <p class="author">Пол Шредер</p>
                         <div class="product__price">
-                           <p class="author">Пол Шредер</p>
                            <span class="price">99 999 ₽</span>
                            <button class="button small" data-popup="request">В корзину</button>
                         </div>
-                        <a href="#!">
-                           <h3 class="title title-h3">Трансцендентальный стиль в кино: Одзу, Брессон, Дрейер</h3>
+                        <a href="#!" class="product__title">
+                           <h3 class="title title-h3">
+                              Трансцендентальный стиль в <br />
+                              кино: Одзу, Брессон, Дрейер
+                           </h3>
                         </a>
                      </article>
                   </div>
@@ -144,13 +152,16 @@
                               alt="book"
                            />
                         </a>
+                        <p class="author">Фридрих Киттлер</p>
                         <div class="product__price">
-                           <p class="author">Фридрих Киттлер</p>
                            <span class="price">99 999 ₽</span>
                            <button class="button small" data-popup="request">В корзину</button>
                         </div>
-                        <a href="#!">
-                           <h3 class="title title-h3">Философии литературы: Берлинские лекции 2002</h3>
+                        <a href="#!" class="product__title">
+                           <h3 class="title title-h3">
+                              Философии литературы: <br />
+                              Берлинские лекции 2002
+                           </h3>
                         </a>
                      </article>
                   </div>

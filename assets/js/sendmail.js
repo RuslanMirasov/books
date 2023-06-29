@@ -6,13 +6,13 @@ const selectInputs = document.querySelectorAll('.select');
 
 const addErrorText = true;
 const minSymbols = 3;
-const errorSymbols = 'Minimum characters!';
-const errorEmptyInput = 'The field must not be empty!';
-const errorNameInput = 'Only letters are allowed!';
-const errorEmailInput = 'Wrong E-mail format!';
-const errorPhoneInput = 'Wrong phone format!';
-const errorMinNumber = 'The minimum value is';
-const errorMaxNumber = 'The maximum value is';
+const errorSymbols = 'Минимум символов!';
+const errorEmptyInput = 'Заполните поле!';
+const errorNameInput = 'Цифры запрещены!';
+const errorEmailInput = 'Не верный формат E-mail!';
+const errorPhoneInput = 'Не верный формат телефона!';
+const errorMinNumber = 'Минимальное значение';
+const errorMaxNumber = 'Максимальное значение';
 
 selectInputs.forEach(select => {
    const selectLabel = select.closest('.label--select');
