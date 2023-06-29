@@ -49,3 +49,12 @@
       pointer-events: none;
    }
 }
+
+.link {
+   transition: 250ms var(--cubic);
+   opacity: 1;
+   &:hover,
+   &:focus {
+      opacity: 0.5;
+   }
+}

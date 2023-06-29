@@ -58,7 +58,8 @@ h6 {
    line-height: 1.2;
 }
 
-.text {
+.text,
+.postArticle article p {
    @include css-r('font-size', 35, 18, 1);
    line-height: 1.2;
 }
