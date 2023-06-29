@@ -429,12 +429,17 @@ h6 {
   display: block;
   position: relative;
   color: var(--black);
+  transition: 250ms var(--cubic);
   font-size: 40px;
+  opacity: 1;
 }
 @media only screen and (min-width: 0px) and (max-width: 1920px) {
   .menu .menu__item a {
     font-size: calc(24px + 16 * ((100vw - 375px) / 1545));
   }
+}
+.menu .menu__item a:hover, .menu .menu__item a:focus, .menu .menu__item a:active {
+  opacity: 0.5;
 }
 @media screen and (max-width: 1279px) {
   .menu .menu__item a {
@@ -444,20 +449,12 @@ h6 {
 @media screen and (max-width: 767px) {
   .menu .menu__item a {
     line-height: 1.171875;
-    transition: 250ms var(--cubic);
     padding: 16px;
-  }
-  .menu .menu__item a:hover, .menu .menu__item a:focus, .menu .menu__item a:active {
-    color: var(--black);
   }
 }
 @media screen and (min-width: 768px) {
   .menu .menu__item a {
     line-height: 1;
-    transition: color 250ms var(--cubic), border-bottom 250ms var(--cubic);
-  }
-  .menu .menu__item a:hover, .menu .menu__item a:focus, .menu .menu__item a:active {
-    color: var(--black);
   }
 }
 @media screen and (min-width: 768px) {

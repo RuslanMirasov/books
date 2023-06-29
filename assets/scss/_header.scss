@@ -142,28 +142,23 @@
          display: block;
          position: relative;
          color: var(--black);
+         transition: 250ms var(--cubic);
          @include css-r('font-size', 40, 24, 1);
+         opacity: 1;
+         &:hover,
+         &:focus,
+         &:active {
+            opacity: 0.5;
+         }
          @media screen and (max-width: 1279px) {
             font-size: 24px;
          }
          @media screen and (max-width: 767px) {
             line-height: 1.171875;
-            transition: 250ms var(--cubic);
             padding: 16px;
-            &:hover,
-            &:focus,
-            &:active {
-               color: var(--black);
-            }
          }
          @media screen and (min-width: 768px) {
             line-height: 1;
-            transition: color 250ms var(--cubic), border-bottom 250ms var(--cubic);
-            &:hover,
-            &:focus,
-            &:active {
-               color: var(--black);
-            }
          }
       }
       @media screen and (min-width: 768px) {
