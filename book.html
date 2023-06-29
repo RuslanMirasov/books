@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="./assets/css/normalize.css" />
+      <link rel="stylesheet" href="./assets/css/styles.min.css" />
+      <title>Название книги</title>
+   </head>
+   <body class="body">
+      <!-- preloader -->
+      <div class="preloader">
+         <div class="preloaderLogo">
+            <svg><use href="./assets/img/icons.svg#logo2"></use></svg>
+         </div>
+      </div>
+
+      <!--header-->
+      <header class="header">
+         <div class="header__wrapper">
+            <div class="container">
+               <a href="./" class="logo">
+                  <svg width="56" height="56"><use href="./assets/img/icons.svg#logo"></use></svg>
+               </a>
+               <div class="menu-backdrop">
+                  <button type="button" class="close-area" data-menu-open></button>
+                  <div class="menu-body">
+                     <nav class="menu">
+                        <ul>
+                           <li class="menu__item"><a href="./books.html">Книги</a></li>
+                           <li class="menu__item"><a href="./events.html">События</a></li>
+                           <li class="menu__item"><a href="./authors.html">Авторы</a></li>
+                           <li class="menu__item"><a href="./about.html">Об издательстве</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+               <button type="button" class="burger" data-menu-open><span></span></button>
+            </div>
+         </div>
+      </header>
+      <!--header end-->
+
+      <!--main-->
+      <main class="main">
+         <!--section Hero-->
+         <section class="section">
+            <div class="container">
+               <!--SLIDER-->
+               <div
+                  class="responsiveSlider"
+                  data-col="1"
+                  data-coltab="1"
+                  data-colmob="1"
+                  data-margin="0"
+                  data-marginmobil="0"
+                  data-effect="slide"
+                  data-autoplay="0"
+                  data-move="true"
+                  data-loop="true"
+               >
+                  <div class="swiper-container bookSlider">
+                     <div class="swiper-wrapper">
+                        <!--slide 1-->
+                        <div class="swiper-slide">
+                           <img src="./assets/img/products/1.jpg" alt="Название книги" class="bookSlideImage" />
+                        </div>
+                        <!--slide 2-->
+                        <div class="swiper-slide">
+                           <img src="./assets/img/products/1.jpg" alt="Название книги" class="bookSlideImage" />
+                        </div>
+                        <!--slide 3-->
+                        <div class="swiper-slide">
+                           <img src="./assets/img/products/1.jpg" alt="Название книги" class="bookSlideImage" />
+                        </div>
+                     </div>
+                  </div>
+                  <!--arrows-->
+                  <div class="slider-arrow slider-arrow--left bookSlider_prev">
+                     <svg><use href="./assets/img/icons.svg#arr_l_black"></use></svg>
+                  </div>
+                  <div class="slider-arrow slider-arrow--right bookSlider_next">
+                     <svg><use href="./assets/img/icons.svg#arr_r_black"></use></svg>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--section Hero end-->
+         <section class="section section--bookTitle">
+            <div class="container">
+               <div class="postArticle">
+                  <p class="book__author">Кристоф Шлингензиф</p>
+                  <article>
+                     <div class="bookTitle">
+                        <h1 class="text">Так хорошо, как здесь, на небе быть не может!</h1>
+                        <p class="price">99 999 ₽</p>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </section>
+         <section class="section section--about">
+            <div class="container">
+               <div class="about">
+                  <div class="postArticle">
+                     <article>
+                        <p>
+                           В январе 2008 года у известного немецкого режиссера кино, театра и оперы, акциониста и инсталлятора Кристофа Шлингензифа был диагностирован рак
+                           лёгких. Одно лёгкое было удалено, затем последовала химиотерапия, прогноз был неопределённый. «Мне пришлось научиться лежать на диване и ничего
+                           не делать, только думать».
+                        </p>
+                        <p>
+                           Уже через несколько дней после постановки диагноза Кристоф Шлингензиф начинает вести беседы - с самим собой, с друзьями, с умершим отцом, с
+                           Богом - почти всегда с включённым диктофоном. Иногда эти разговоры звучат гневно и вызывающе, иногда печально и отчаянно. В центре внимания
+                           всегда одни и те же вопросы, поставленные болезнью: Кто он? Кем еще может стать? Как продолжать работать, когда ритм мира перестал совпадать с
+                           твоим? Как научиться справляться с болезнью? Как принять свою смерть? И где Бог?
+                        </p>
+                        <p>
+                           Этот дневник - впечатляющий пример самоанализа перед лицом болезни и смерти, лекарство против молчания и не в последнюю очередь признание в
+                           любви к этому миру.
+                        </p>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--section Hero-->
+         <section class="section section--about">
+            <div class="container">
+               <h2 class="title title--h3 title--border">Купить в онлайн-магазинах</h2>
+               <div class="pay">
+                  <a href="#!" class="pay__item" target="_blank"><img src="./assets/img/pay/1.png" alt="Купить в онлайн-магазинах" /></a>
+                  <a href="#!" class="pay__item" target="_blank"><img src="./assets/img/pay/2.png" alt="Купить в онлайн-магазинах" /></a>
+                  <a href="#!" class="pay__item" target="_blank"><img src="./assets/img/pay/1.png" alt="Купить в онлайн-магазинах" /></a>
+                  <a href="#!" class="pay__item" target="_blank"><img src="./assets/img/pay/2.png" alt="Купить в онлайн-магазинах" /></a>
+                  <a href="#!" class="pay__item" target="_blank"><img src="./assets/img/pay/1.png" alt="Купить в онлайн-магазинах" /></a>
+                  <a href="#!" class="pay__item" target="_blank"><img src="./assets/img/pay/2.png" alt="Купить в онлайн-магазинах" /></a>
+               </div>
+            </div>
+         </section>
+
+         <!--section Hero-->
+         <section class="section section--hero">
+            <div class="container">
+               <h2 class="title title--h3 title--border">Похожие книги</h2>
+               <div class="products products--3">
+                  <div class="products__item">
+                     <article class="product">
+                        <a href="./book.html" class="product__image">
+                           <img src="./assets/img/products/1.jpg" alt="book" />
+                        </a>
+                        <p class="author">Кристоф Шлингензиф</p>
+                        <div class="product__price">
+                           <span class="price">99 999 ₽</span>
+                           <a href="./book.html" class="button small">Подробнее</a>
+                        </div>
+                        <a href="./book.html" class="product__title">
+                           <h3 class="title title--h3">
+                              Так хорошо, как здесь, <br />
+                              на небе быть не может!
+                           </h3>
+                        </a>
+                     </article>
+                  </div>
+                  <div class="products__item">
+                     <article class="product">
+                        <a href="./book.html" class="product__image">
+                           <img src="./assets/img/products/2.jpg" alt="book" />
+                        </a>
+                        <p class="author">Пол Шредер</p>
+                        <div class="product__price">
+                           <span class="price">99 999 ₽</span>
+                           <a href="./book.html" class="button small">Подробнее</a>
+                        </div>
+                        <a href="./book.html" class="product__title">
+                           <h3 class="title title--h3">
+                              Трансцендентальный стиль в <br />
+                              кино: Одзу, Брессон, Дрейер
+                           </h3>
+                        </a>
+                     </article>
+                  </div>
+                  <div class="products__item">
+                     <article class="product">
+                        <a href="./book.html" class="product__image">
+                           <img
+                              src="https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-realistic-white-book-mock-up-template-background-png-image_4669134.png"
+                              alt="book"
+                           />
+                        </a>
+                        <p class="author">Фридрих Киттлер</p>
+                        <div class="product__price">
+                           <span class="price">99 999 ₽</span>
+                           <a href="./book.html" class="button small">Подробнее</a>
+                        </div>
+                        <a href="./book.html" class="product__title">
+                           <h3 class="title title--h3">
+                              Философии литературы: <br />
+                              Берлинские лекции 2002
+                           </h3>
+                        </a>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!--main end-->
+
+      <!--footer-->
+      <footer class="footer">
+         <div class="container">
+            <div class="heroText">
+               <h2 class="title">Des Esseintes Press</h2>
+               <a href="./">
+                  <svg><use href="./assets/img/icons.svg#logo2"></use></svg>
+               </a>
+            </div>
+            <div class="footer__content">
+               <address>
+                  Московский международный университет, Россия, Москва, <br />
+                  Ленинградский проспект, 17, 125040
+               </address>
+               <nav>
+                  <ul>
+                     <li><a href="./books.html">Книги</a></li>
+                     <li><a href="./events.html">События</a></li>
+                     <li><a href="./authors.html">Авторы</a></li>
+                     <li><a href="./about.html">Об издательстве</a></li>
+                     <li><a href="./contacts.html">Контакты</a></li>
+                     <li><a href="./policy.html">Политика конфиденциальности</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </footer>
+      <!--footer end-->
+
+      <script src="./assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="./assets/js/accordeon.js"></script>
+      <script src="./assets/js/modal.js"></script>
+      <script src="./assets/js/sendmail.js"></script>
+      <script src="./assets/js/sliders.js"></script>
+      <script src="./assets/js/scripts.js"></script>
+   </body>
+</html>

@@ -143,6 +143,9 @@
          position: relative;
          color: var(--black);
          @include css-r('font-size', 40, 24, 1);
+         @media screen and (max-width: 1279px) {
+            font-size: 24px;
+         }
          @media screen and (max-width: 767px) {
             line-height: 1.171875;
             transition: 250ms var(--cubic);

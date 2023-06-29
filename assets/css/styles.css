@@ -193,6 +193,19 @@ h6 {
   }
 }
 
+.book__author {
+  display: block;
+  width: 25%;
+  font-size: 14px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 1100px) {
+  .book__author {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 /*----------------------------------------------- PRELOADER*/
 .preloader {
   position: fixed;
@@ -421,6 +434,11 @@ h6 {
 @media only screen and (min-width: 0px) and (max-width: 1920px) {
   .menu .menu__item a {
     font-size: calc(24px + 16 * ((100vw - 375px) / 1545));
+  }
+}
+@media screen and (max-width: 1279px) {
+  .menu .menu__item a {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -760,7 +778,7 @@ h6 {
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
-  width: 49%;
+  width: 52%;
   padding: 14px 0px;
   font-size: 14px;
   line-height: 1.2;
@@ -781,7 +799,7 @@ h6 {
   display: inline-block;
   font-size: 14px;
   line-height: 1.2;
-  width: 50%;
+  width: 47%;
   order: 2;
 }
 @media screen and (max-width: 880px) {
@@ -1125,7 +1143,7 @@ h6 {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 @media screen and (max-width: 1100px) {
@@ -1134,7 +1152,7 @@ h6 {
   }
 }
 .postArticle .title {
-  width: 30%;
+  width: 25%;
   padding-right: 50px;
 }
 @media screen and (max-width: 1100px) {
@@ -1146,7 +1164,7 @@ h6 {
 }
 .postArticle article {
   display: block;
-  width: 70%;
+  width: 75%;
 }
 @media screen and (max-width: 1100px) {
   .postArticle article {
@@ -1154,7 +1172,7 @@ h6 {
   }
 }
 .postArticle article > * {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .postArticle article > *:first-child {
   margin-top: 0px;
@@ -1172,6 +1190,162 @@ h6 {
   font-size: 14px;
   line-height: 1.2;
   margin-bottom: 4px;
+}
+
+.about--mini .postArticle .title {
+  width: 30%;
+}
+@media screen and (max-width: 1100px) {
+  .about--mini .postArticle .title {
+    width: 100%;
+  }
+}
+.about--mini .postArticle article {
+  width: 70%;
+}
+@media screen and (max-width: 1100px) {
+  .about--mini .postArticle article {
+    width: 100%;
+  }
+}
+.about--mini .postArticle article > * {
+  margin-top: 24px;
+}
+.about--mini .postArticle article > *:first-child {
+  margin-top: 0px;
+}
+
+/*----------------------------------------------- BOOK*/
+.bookSlider {
+  overflow: hidden;
+}
+.bookSlider .swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: var(--grey);
+}
+.bookSlider .swiper-slide:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 48%;
+}
+@media screen and (max-width: 767px) {
+  .bookSlider .swiper-slide:before {
+    padding-top: 114%;
+  }
+}
+.bookSlider img {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.section--bookTitle .postArticle {
+  align-items: center;
+}
+.section--bookTitle .container {
+  border-bottom: 2px solid var(--black);
+  padding: 30px 0px;
+}
+@media screen and (max-width: 767px) {
+  .section--bookTitle .container {
+    border-bottom: 1px solid var(--black);
+  }
+}
+
+.bookTitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.bookTitle .text {
+  width: 80%;
+}
+@media screen and (max-width: 1100px) {
+  .bookTitle .text {
+    width: 100%;
+  }
+}
+.bookTitle .price {
+  width: 20%;
+  text-align: right;
+  font-size: 14px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 1100px) {
+  .bookTitle .price {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+
+/*----------------------------------------- pay*/
+.pay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 1%;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 1920px) {
+  .pay {
+    margin-top: calc(10px + 30 * ((100vw - 375px) / 1545));
+  }
+}
+.pay .pay__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+  border: 1px solid #000000;
+  min-width: 15.833333%;
+  position: relative;
+  cursor: pointer;
+  margin-top: 16px;
+}
+.pay .pay__item:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 40%;
+}
+.pay .pay__item img {
+  position: absolute;
+  max-width: 80%;
+  max-height: 80%;
+}
+@media screen and (max-width: 1023px) {
+  .pay .pay__item {
+    min-width: 19.2%;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pay {
+    gap: 2%;
+  }
+  .pay .pay__item {
+    min-width: 32%;
+    margin-top: 14px;
+  }
+}
+@media screen and (max-width: 449px) {
+  .pay {
+    gap: 4%;
+  }
+  .pay .pay__item {
+    min-width: 48%;
+    margin-top: 14px;
+  }
 }
 
 /*----------------------------------------------- BUTTONS*/

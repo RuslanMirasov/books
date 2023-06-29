@@ -202,7 +202,7 @@
    flex-wrap: nowrap;
    justify-content: flex-end;
    align-items: center;
-   width: 49%;
+   width: 52%;
    padding: 14px 0px;
    font-size: 14px;
    line-height: 1.2;
@@ -220,7 +220,7 @@
    display: inline-block;
    font-size: 14px;
    line-height: 1.2;
-   width: 50%;
+   width: 47%;
    order: 2;
    @media screen and (max-width: 880px) {
       width: 100%;
@@ -475,17 +475,18 @@
       max-width: 1400px;
    }
 }
+
 .postArticle {
    display: flex;
    flex-wrap: nowrap;
    width: 100%;
-   justify-content: flex-start;
+   justify-content: flex-end;
    align-items: flex-start;
    @media screen and (max-width: 1100px) {
       flex-wrap: wrap;
    }
    .title {
-      width: 30%;
+      width: 25%;
       padding-right: 50px;
       @media screen and (max-width: 1100px) {
          width: 100%;
@@ -495,12 +496,12 @@
    }
    article {
       display: block;
-      width: 70%;
+      width: 75%;
       @media screen and (max-width: 1100px) {
          width: 100%;
       }
       > * {
-         margin-top: 20px;
+         margin-top: 40px;
          &:first-child {
             margin-top: 0px;
          }
@@ -520,6 +521,147 @@
                margin-bottom: 4px;
             }
          }
+      }
+   }
+}
+
+.about--mini {
+   .postArticle {
+      .title {
+         width: 30%;
+         @media screen and (max-width: 1100px) {
+            width: 100%;
+         }
+      }
+      article {
+         width: 70%;
+         @media screen and (max-width: 1100px) {
+            width: 100%;
+         }
+         > * {
+            margin-top: 24px;
+            &:first-child {
+               margin-top: 0px;
+            }
+         }
+      }
+   }
+}
+
+/*----------------------------------------------- BOOK*/
+.bookSlider {
+   overflow: hidden;
+   .swiper-slide {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background: var(--grey);
+      &:before {
+         content: '';
+         display: block;
+         width: 100%;
+         padding-top: 48%;
+         @media screen and (max-width: 767px) {
+            padding-top: 114%;
+         }
+      }
+   }
+   img {
+      max-width: 100%;
+      height: 100%;
+      position: absolute;
+   }
+}
+
+.section--bookTitle {
+   .postArticle {
+      align-items: center;
+   }
+   .container {
+      border-bottom: 2px solid var(--black);
+      padding: 30px 0px;
+      @media screen and (max-width: 767px) {
+         border-bottom: 1px solid var(--black);
+      }
+   }
+}
+
+.bookTitle {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   .text {
+      width: 80%;
+      @media screen and (max-width: 1100px) {
+         width: 100%;
+      }
+   }
+   .price {
+      width: 20%;
+      text-align: right;
+      font-size: 14px;
+      line-height: 1.2;
+      @media screen and (max-width: 1100px) {
+         width: 100%;
+         text-align: left;
+         margin-top: 20px;
+      }
+   }
+}
+
+/*----------------------------------------- pay*/
+.pay {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+   gap: 1%;
+   @include css-r('margin-top', 40, 10, 1);
+   .pay__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background: #efefef;
+      border: 1px solid #000000;
+      min-width: 15.833333%;
+      position: relative;
+      cursor: pointer;
+      margin-top: 16px;
+      &:before {
+         content: '';
+         display: block;
+         width: 100%;
+         padding-top: 40%;
+      }
+      img {
+         position: absolute;
+         max-width: 80%;
+         max-height: 80%;
+      }
+   }
+   @media screen and (max-width: 1023px) {
+      .pay__item {
+         min-width: 19.2%;
+         margin-top: 10px;
+      }
+   }
+   @media screen and (max-width: 767px) {
+      gap: 2%;
+      .pay__item {
+         min-width: 32%;
+         margin-top: 14px;
+      }
+   }
+   @media screen and (max-width: 449px) {
+      gap: 4%;
+      .pay__item {
+         min-width: 48%;
+         margin-top: 14px;
       }
    }
 }
