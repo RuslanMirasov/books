@@ -1,2 +1,1 @@
-# BOOKS
-https://ruslanmirasov.github.io/books
+![Creating repo from a template step 1](./assets/img/poster.jpg)
