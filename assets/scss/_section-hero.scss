@@ -32,10 +32,10 @@
 }
 
 .heroSlider {
-   margin: 40px 0px;
+   margin-top: 40px;
    overflow: hidden;
    @media screen and (max-width: 767px) {
-      margin: 20px 0px;
+      margin-top: 20px;
    }
    .heroSlider__image {
       position: relative;
@@ -59,8 +59,9 @@
    }
    .heroText {
       opacity: 0;
-      transform: translate(0px, -20px);
-      transition: 800ms var(--cubic) 400ms;
+      transform: translate(20px, 0px);
+      transition: 800ms var(--cubic) 200ms;
+      padding-bottom: 10px;
    }
    .swiper-slide.swiper-slide-active {
       .heroText {
