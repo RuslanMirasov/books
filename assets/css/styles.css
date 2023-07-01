@@ -96,32 +96,32 @@ h6 {
 }
 @media screen and (max-width: 1840px) {
   .title.title--h1 {
-    font-size: 160px;
+    font-size: 158px;
   }
 }
 @media only screen and (max-width: 1840px) and (min-width: 0px) and (max-width: 1920px) {
   .title.title--h1 {
-    font-size: calc(60px + 100 * ((100vw - 375px) / 1545));
+    font-size: calc(60px + 98 * ((100vw - 375px) / 1545));
   }
 }
 @media screen and (max-width: 1560px) {
   .title.title--h1 {
-    font-size: 150px;
+    font-size: 148px;
   }
 }
 @media only screen and (max-width: 1560px) and (min-width: 0px) and (max-width: 1920px) {
   .title.title--h1 {
-    font-size: calc(60px + 90 * ((100vw - 375px) / 1545));
+    font-size: calc(60px + 88 * ((100vw - 375px) / 1545));
   }
 }
 @media screen and (max-width: 1320px) {
   .title.title--h1 {
-    font-size: 120px;
+    font-size: 118px;
   }
 }
 @media only screen and (max-width: 1320px) and (min-width: 0px) and (max-width: 1920px) {
   .title.title--h1 {
-    font-size: calc(60px + 60 * ((100vw - 375px) / 1545));
+    font-size: calc(60px + 58 * ((100vw - 375px) / 1545));
   }
 }
 @media screen and (max-width: 767px) {

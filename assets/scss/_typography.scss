@@ -20,13 +20,13 @@ h6 {
       @include css-r('font-size', 165, 60, 1);
       line-height: 1;
       @media screen and (max-width: 1840px) {
-         @include css-r('font-size', 160, 60, 1);
+         @include css-r('font-size', 158, 60, 1);
       }
       @media screen and (max-width: 1560px) {
-         @include css-r('font-size', 150, 60, 1);
+         @include css-r('font-size', 148, 60, 1);
       }
       @media screen and (max-width: 1320px) {
-         @include css-r('font-size', 120, 60, 1);
+         @include css-r('font-size', 118, 60, 1);
       }
       @media screen and (max-width: 767px) {
          line-height: 1.1;
