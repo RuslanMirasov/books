@@ -120,7 +120,7 @@
    @media screen and (max-width: 449px) {
       padding: 80px 20px 20px 20px;
       max-width: 100%;
-      .menu .menu__item a {
+      .menu li a {
          padding-left: 0px;
       }
    }
@@ -137,7 +137,7 @@
          flex-wrap: wrap;
       }
    }
-   .menu__item {
+   li {
       a {
          display: block;
          position: relative;

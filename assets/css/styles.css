@@ -206,6 +206,24 @@ h6 {
   }
 }
 
+.postArticle article h2,
+.postArticle article h3,
+.postArticle article h4,
+.postArticle article h5,
+.postArticle article h6 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 0px) and (max-width: 1920px) {
+  .postArticle article h2,
+.postArticle article h3,
+.postArticle article h4,
+.postArticle article h5,
+.postArticle article h6 {
+    font-size: calc(26px + 14 * ((100vw - 375px) / 1545));
+  }
+}
+
 /*----------------------------------------------- PRELOADER*/
 .preloader {
   position: fixed;
@@ -406,7 +424,7 @@ h6 {
     padding: 80px 20px 20px 20px;
     max-width: 100%;
   }
-  .menu-body .menu .menu__item a {
+  .menu-body .menu li a {
     padding-left: 0px;
   }
 }
@@ -425,7 +443,7 @@ h6 {
     flex-wrap: wrap;
   }
 }
-.menu .menu__item a {
+.menu li a {
   display: block;
   position: relative;
   color: var(--black);
@@ -434,31 +452,31 @@ h6 {
   opacity: 1;
 }
 @media only screen and (min-width: 0px) and (max-width: 1920px) {
-  .menu .menu__item a {
+  .menu li a {
     font-size: calc(24px + 16 * ((100vw - 375px) / 1545));
   }
 }
-.menu .menu__item a:hover, .menu .menu__item a:focus, .menu .menu__item a:active {
+.menu li a:hover, .menu li a:focus, .menu li a:active {
   opacity: 0.5;
 }
 @media screen and (max-width: 1279px) {
-  .menu .menu__item a {
+  .menu li a {
     font-size: 24px;
   }
 }
 @media screen and (max-width: 767px) {
-  .menu .menu__item a {
+  .menu li a {
     line-height: 1.171875;
     padding: 16px;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu .menu__item a {
+  .menu li a {
     line-height: 1;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu .menu__item {
+  .menu li {
     margin-left: auto;
   }
 }
