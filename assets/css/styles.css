@@ -86,12 +86,12 @@ h6 {
   font-weight: normal;
 }
 .title.title--h1 {
-  font-size: 168px;
+  font-size: 165px;
   line-height: 1;
 }
 @media only screen and (min-width: 0px) and (max-width: 1920px) {
   .title.title--h1 {
-    font-size: calc(60px + 108 * ((100vw - 375px) / 1545));
+    font-size: calc(60px + 105 * ((100vw - 375px) / 1545));
   }
 }
 @media screen and (max-width: 1840px) {
@@ -577,7 +577,6 @@ h6 {
 .section--hero .title-wrapp .title--h1 {
   max-width: 93%;
   position: relative;
-  left: -1.8%;
 }
 .section--hero .title-wrapp svg {
   margin: 0;

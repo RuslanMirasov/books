@@ -17,7 +17,7 @@ h6 {
    width: 100%;
    font-weight: normal;
    &.title--h1 {
-      @include css-r('font-size', 168, 60, 1);
+      @include css-r('font-size', 165, 60, 1);
       line-height: 1;
       @media screen and (max-width: 1840px) {
          @include css-r('font-size', 160, 60, 1);
