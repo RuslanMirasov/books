@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="./assets/css/normalize.css" />
+      <link rel="stylesheet" href="./assets/css/styles.min.css" />
+      <title>Корзина</title>
+   </head>
+   <body class="body">
+      <!-- preloader -->
+      <div class="preloader">
+         <div class="preloaderLogo">
+            <svg><use href="./assets/img/icons.svg#logo2"></use></svg>
+         </div>
+      </div>
+
+      <!--header-->
+      <header class="header">
+         <div class="header__wrapper">
+            <div class="container">
+               <a href="./" class="logo">
+                  <svg width="56" height="56"><use href="./assets/img/icons.svg#logo"></use></svg>
+               </a>
+               <div class="menu-backdrop">
+                  <button type="button" class="close-area" data-menu-open></button>
+                  <div class="menu-body">
+                     <nav class="menu">
+                        <ul>
+                           <li class="menu__item"><a href="./books.html">Книги</a></li>
+                           <li class="menu__item"><a href="./events.html">События</a></li>
+                           <li class="menu__item"><a href="./authors.html">Авторы</a></li>
+                           <li class="menu__item"><a href="./about.html">Об издательстве</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+               <div class="languages">
+                  <span>ru</span>
+                  <ul>
+                     <li><a href="#">ru</a></li>
+                     <li><a href="#">en</a></li>
+                  </ul>
+               </div>
+               <a href="./cart.html" class="basket">
+                  <span class="basket__count">(&nbsp;5&nbsp;)</span>
+                  <svg><use href="./assets/img/icons.svg#cart"></use></svg>
+               </a>
+               <button type="button" class="burger" data-menu-open><span></span></button>
+            </div>
+         </div>
+      </header>
+      <!--header end-->
+
+      <!--main-->
+      <main class="main">
+         <!--section 1-->
+         <section class="section section--events">
+            <div class="container">
+               <div class="events">
+                  <div class="event">
+                     <div class="event__image"><img src="./assets/img/products/1.jpg" alt="Des Esseintes Press event" /></div>
+                     <div class="event__text">
+                        <div class="cart__top">
+                           <span class="title title--h4">1200 ₽</span>
+                           <button class="wc-block-cart-item__remove-link button small" aria-label="Remove Трансцендентальный стиль в кино from cart">
+                              Удалить
+                           </button>
+                        </div>
+                        <div class="cart__bottom">
+                           <div class="cart__title">
+                              <span>Кристоф Шлингензиф</span>
+                              <h2 class="text">Так хорошо, как здесь, на небе быть не может!</h2>
+                           </div>
+                           <div class="wc-block-components-quantity-selector">
+                              <input
+                                 class="wc-block-components-quantity-selector__input"
+                                 type="number"
+                                 step="1"
+                                 min="1"
+                                 max="9999"
+                                 aria-label="Quantity of Трансцендентальный стиль в кино in your cart."
+                                 value="2"
+                              />
+                              <button
+                                 aria-label="Reduce quantity of Трансцендентальный стиль в кино"
+                                 class="wc-block-components-quantity-selector__button wc-block-components-quantity-selector__button--minus"
+                              >
+                                 -
+                              </button>
+                              <button
+                                 aria-label="Increase quantity of Трансцендентальный стиль в кино"
+                                 class="wc-block-components-quantity-selector__button wc-block-components-quantity-selector__button--plus"
+                              >
+                                 +
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="event">
+                     <div class="event__image"><img src="./assets/img/products/2.jpg" alt="Des Esseintes Press event" /></div>
+                     <div class="event__text">
+                        <div class="cart__top">
+                           <span class="title title--h4">1200 ₽</span>
+                           <button class="wc-block-cart-item__remove-link button small" aria-label="Remove Трансцендентальный стиль в кино from cart">
+                              Удалить
+                           </button>
+                        </div>
+                        <div class="cart__bottom">
+                           <div class="cart__title">
+                              <span>Кристоф Шлингензиф</span>
+                              <h2 class="text">Так хорошо, как здесь, на небе быть не может!</h2>
+                           </div>
+                           <div class="wc-block-components-quantity-selector">
+                              <input
+                                 class="wc-block-components-quantity-selector__input"
+                                 type="number"
+                                 step="1"
+                                 min="1"
+                                 max="9999"
+                                 aria-label="Quantity of Трансцендентальный стиль в кино in your cart."
+                                 value="2"
+                              />
+                              <button
+                                 aria-label="Reduce quantity of Трансцендентальный стиль в кино"
+                                 class="wc-block-components-quantity-selector__button wc-block-components-quantity-selector__button--minus"
+                              >
+                                 -
+                              </button>
+                              <button
+                                 aria-label="Increase quantity of Трансцендентальный стиль в кино"
+                                 class="wc-block-components-quantity-selector__button wc-block-components-quantity-selector__button--plus"
+                              >
+                                 +
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!--TOTALS-->
+                  <div class="wc-block-components-sidebar wc-block-cart__sidebar wp-block-woocommerce-cart-totals-block">
+                     <div class="wp-block-woocommerce-cart-order-summary-block">
+                        <span class="wp-block-woocommerce-cart-order-summary-heading-block wc-block-cart__totals-title">Cart totals</span>
+
+                        <div class="wp-block-woocommerce-cart-order-summary-subtotal-block wc-block-components-totals-wrapper">
+                           <div class="wc-block-components-totals-item">
+                              <span class="wc-block-components-totals-item__label">Подытог</span
+                              ><span class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount wc-block-components-totals-item__value"
+                                 >6300 ₽</span
+                              >
+                              <div class="wc-block-components-totals-item__description"></div>
+                           </div>
+                        </div>
+
+                        <div class="wp-block-woocommerce-cart-order-summary-fee-block wc-block-components-totals-wrapper"></div>
+
+                        <div class="wp-block-woocommerce-cart-order-summary-discount-block wc-block-components-totals-wrapper"></div>
+
+                        <div class="wp-block-woocommerce-cart-order-summary-shipping-block wc-block-components-totals-wrapper">
+                           <div class="wc-block-components-totals-shipping">
+                              <div class="wc-block-components-totals-item">
+                                 <span class="wc-block-components-totals-item__label">Доставка</span
+                                 ><span
+                                    class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount wc-block-components-totals-item__value"
+                                    >0 ₽</span
+                                 >
+                                 <div class="wc-block-components-totals-item__description">
+                                    <div class="wc-block-components-totals-item__description wc-block-components-totals-shipping__via">Free shipping</div>
+                                    <span class="wc-block-components-shipping-address">Shipping to Россия </span
+                                    ><a
+                                       role="button"
+                                       href="#wc-block-components-shipping-calculator-address__link"
+                                       class="wc-block-components-totals-shipping__change-address__link"
+                                       id="wc-block-components-totals-shipping__change-address__link"
+                                       aria-label="Change address"
+                                       aria-expanded="false"
+                                       >Change address</a
+                                    >
+                                 </div>
+                              </div>
+                              <fieldset class="wc-block-components-totals-shipping__fieldset">
+                                 <legend class="screen-reader-text">Shipping options</legend>
+                                 <div class="">
+                                    <div class="" aria-hidden="false">
+                                       <div class="wc-block-components-shipping-rates-control wc-block-components-totals-shipping__options">
+                                          <div class="wc-block-components-shipping-rates-control__package">
+                                             <div class="wc-block-components-radio-control__option-layout">
+                                                <div class="wc-block-components-radio-control__label-group">
+                                                   <span class="wc-block-components-radio-control__label">Free shipping</span>
+                                                </div>
+                                                <div class="wc-block-components-radio-control__description-group">
+                                                   <span class="wc-block-components-radio-control__description"
+                                                      ><span class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount">0 ₽</span></span
+                                                   >
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </fieldset>
+                           </div>
+                        </div>
+
+                        <div class="wc-block-components-totals-wrapper">
+                           <div class="wc-block-components-totals-item wc-block-components-totals-footer-item">
+                              <span class="wc-block-components-totals-item__label">Total</span
+                              ><span class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount wc-block-components-totals-item__value"
+                                 >6300 ₽</span
+                              >
+                              <div class="wc-block-components-totals-item__description"></div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="wc-block-cart__payment-options wp-block-woocommerce-cart-express-payment-block"></div>
+
+                     <div class="wc-block-cart__submit wp-block-woocommerce-proceed-to-checkout-block">
+                        <div aria-hidden="true" style="inset: 0px; opacity: 0; pointer-events: none; position: absolute; z-index: -1"></div>
+                        <div class="wc-block-cart__submit-container">
+                           <a
+                              href="http://localhost/book/checkout/"
+                              class="components-button wc-block-components-button wp-element-button wc-block-cart__submit-button contained"
+                              ><span class="wc-block-components-button__text">Proceed to Checkout</span></a
+                           >
+                        </div>
+                        <div class="wc-block-cart__submit-container wc-block-cart__submit-container--sticky" style="background-color: rgb(255, 255, 255)">
+                           <a
+                              href="http://localhost/book/checkout/"
+                              class="components-button wc-block-components-button wp-element-button wc-block-cart__submit-button contained button black"
+                              ><span class="wc-block-components-button__text">Proceed to Checkout</span></a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--section 2-->
+         <section class="section section--hero">
+            <div class="container">
+               <h2 class="title title--h2 title--border">Готовятся к печати</h2>
+               <div class="prepearing">
+                  <div class="prepearing__item">
+                     <p class="author">Автор Фамилия</p>
+                     <h3 class="title title--h3">Название книги Раз</h3>
+                  </div>
+                  <div class="prepearing__item">
+                     <p class="author">Автор Фамилия</p>
+                     <h3 class="title title--h3">Название книги Два</h3>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!--main end-->
+
+      <!--footer-->
+      <footer class="footer">
+         <div class="container">
+            <div class="heroText">
+               <h2 class="title">Des Esseintes Press</h2>
+               <a href="./">
+                  <svg><use href="./assets/img/icons.svg#logo2"></use></svg>
+               </a>
+            </div>
+            <div class="footer__content">
+               <address>
+                  Московский международный университет, Россия, Москва, <br />
+                  Ленинградский проспект, 17, 125040
+               </address>
+               <nav>
+                  <ul>
+                     <li><a href="./books.html">Книги</a></li>
+                     <li><a href="./events.html">События</a></li>
+                     <li><a href="./authors.html">Авторы</a></li>
+                     <li><a href="./about.html">Об издательстве</a></li>
+                     <li><a href="./contacts.html">Контакты</a></li>
+                     <li><a href="./policy.html">Политика конфиденциальности</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </footer>
+      <!--footer end-->
+
+      <script src="./assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="./assets/js/accordeon.js"></script>
+      <script src="./assets/js/modal.js"></script>
+      <script src="./assets/js/sendmail.js"></script>
+      <script src="./assets/js/sliders.js"></script>
+      <script src="./assets/js/scripts.js"></script>
+   </body>
+</html>

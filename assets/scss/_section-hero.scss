@@ -305,7 +305,7 @@
 /*------------------------ section--events*/
 
 .section--events {
-   @include css-r('padding-top', 120, 30, 1);
+   @include css-r('padding-top', 45, 30, 1);
    @include css-r('padding-bottom', 250, 80, 1);
 }
 
@@ -313,7 +313,7 @@
    display: flex;
    width: 100%;
    flex-wrap: wrap;
-   @include css-r('gap', 160, 70, 1);
+   @include css-r('gap', 80, 50, 1);
 }
 
 .event {

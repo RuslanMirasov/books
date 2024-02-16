@@ -5,6 +5,7 @@
    flex-wrap: wrap;
    align-items: center;
    gap: 24px;
+   width: 100%;
    &.ta--c {
       justify-content: center;
    }
@@ -41,6 +42,16 @@
       &:hover,
       &:focus {
          border: 1px solid #000000;
+      }
+   }
+   &.black {
+      border: 1px solid #000000;
+      background: #000;
+      color: #fff;
+      &:hover,
+      &:focus {
+         border: 1px solid #707070;
+         background: #707070;
       }
    }
    &:disabled {
